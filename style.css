@@ -1,142 +1,24 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
   body {
-    font-family: 'Lora', serif;
-    font-size: 16px;
+    font-family: 'Lora', sans-serif;
+    background-color: #fff;
     color: #333;
-    background-color: #fff;
-  }
-  
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    z-index: 100;
-  }
-  
-  header .logo {
-    display: inline-block;
-    font-size: 24px;
-    font-weight: bold;
-    padding: 20px;
-    color: #7b2cbf;
-  }
-  
-  header nav {
-    float: right;
-    padding: 20px;
-  }
-  
-  header nav a {
-    color: #333;
-    font-weight: bold;
-    text-decoration: none;
-    margin-left: 20px;
-  }
-  
-  section {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 50px 20px;
-  }
-  
-  section h1 {
-    color: #7b2cbf;
-    font-size: 36px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  section h2 {
-    color: #7b2cbf;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  section p {
-    margin-bottom: 20px;
-    line-height: 1.5;
-  }
-  
-  .project-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-  
-  .project-item {
-    background-color: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .project-item img {
-    width: 100%;
-    max-width: 150px;
-    margin-bottom: 20px;
-  }
-  
-  .project-item h3 {
-    color: #7b2cbf;
-    font-size: 20px;
     margin: 0;
-    text-align: center;
   }
-  
-  /* Colors */
-  body {
-    color: #333;
-    background-color: #fff;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', sans-serif;
   }
-  
-  header {
-    background-color: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  header .logo {
-    color: #7b2cbf;
-  }
-  
-  header nav a {
-    color: #333;
-  }
-  
-  section h1 {
-    color: #7b2cbf;
-  }
-  
-  section h2 {
-    color: #7b2cbf;
-  }
-  
-  .project-item {
-    background-color: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    padding: 20px;
+  .container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    margin: 20px;
   }
-  
-  .project-item h3 {
-    color: #7b2cbf;
+  .github-widget {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border: 2px solid purple;
+    border-radius: 10px;
   }
-  
-  .project-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  }
-  
