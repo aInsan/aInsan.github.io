@@ -4,10 +4,28 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     font-family: "Lora", sans-serif;
+    height: 100%;
+    margin: 0;
 }
-
+  
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px; /* same height as the footer */
+}
+  
+.footer,
+.push {
+    height: 50px; /* same height as the footer */
+}
+  
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+  
 header {
     background-color: #333;
     color: #fff;
