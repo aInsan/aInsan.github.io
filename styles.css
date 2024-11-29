@@ -7,8 +7,8 @@
 }
 
 body {
-  background: linear-gradient(135deg, #e0f7fa, #f1e5f6); /* Soft pastel gradient */
-  color: #333;
+  background: #2c3e50; /* Dark blueish gray */
+  color: #ecf0f1; /* Light gray for text */
   overflow-x: hidden;
 }
 
@@ -17,16 +17,27 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 20px 40px;
-  background-color: rgba(250, 229, 211, 0.9); /* Warm pastel peach */
+  background-color: rgba(52, 73, 94, 0.9); /* Matching lighter purple */
   backdrop-filter: blur(10px);
   position: fixed;
   width: 100%;
   z-index: 999;
 }
 
+/* Link styles */
+a {
+  color: #eea4ed; /* Saturated slightly pink purple for links */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #eed4ed; /* Slightly lighter purple for hovered links */
+}
+
 header .logo {
   font-size: 1.5rem;
   font-weight: bold;
+  color: #ecf0f1; /* Light gray for text */
 }
 
 nav ul {
@@ -40,42 +51,59 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: #ecf0f1; /* Light gray for text */
   font-size: 1rem;
   transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: #9c88ff; /* Soft pastel purple */
+  color: #9b59b6; /* Slightly lighter purple */
 }
-
-/* Hero section */
 .hero {
+  position: relative;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(145deg, #ffebee, #d7e1fa); /* Pastel pink and blue */
-  position: relative;
+  overflow: hidden;
 }
 
 .hero-text {
+  position: absolute;
+  z-index: 2;
   text-align: center;
-  color: #333;
+  color: #ecf0f1; /* Light gray for text */
+  background: rgba(44, 62, 80, 0.9); /* Dark blueish gray with transparency */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hero-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 10px;
   animation: fadeIn 1.5s ease-in-out;
-  color: #607d8b; /* Muted blue-grey */
+  color: #b37cc9; /* Slightly lighter purple */
 }
 
 .hero p {
   font-size: 1.25rem;
   animation: fadeIn 2s ease-in-out;
-  color: #455a64; /* Slightly darker muted blue-grey */
-
+  color: #bdc3c7; /* Slightly darker gray */
 }
 
 /* About Section */
@@ -84,8 +112,8 @@ nav ul li a:hover {
 }
 
 .about {
-  background: rgba(241, 224, 247, 0.9); /* Light pastel lavender */
-  color: #333;
+  background: rgba(52, 73, 94, 0.9); /* Matching lighter purple */
+  color: #ecf0f1; /* Light gray for text */
   backdrop-filter: blur(10px);
   border-radius: 20px;
   margin: 50px auto;
@@ -105,7 +133,7 @@ nav ul li a:hover {
 
 /* Projects Section */
 .projects {
-  background-color: #e1f5fe; /* Soft pastel blue */
+  background-color: #34495e; /* Darker gray */
 }
 
 .projects h2 {
@@ -115,7 +143,7 @@ nav ul li a:hover {
 }
 
 .project-item {
-  background: rgba(255, 245, 238, 0.9); /* Light pastel orange */
+  background: rgba(52, 73, 94, 0.9); /* Matching lighter purple */
   backdrop-filter: blur(8px);
   border-radius: 15px;
   margin: 20px 0;
@@ -129,7 +157,7 @@ nav ul li a:hover {
 
 /* Contact Section */
 .contact {
-  background: #fff3e0; /* Pastel cream */
+  background: #2c3e50; /* Dark blueish gray */
   padding: 80px 40px;
 }
 
@@ -138,7 +166,7 @@ nav ul li a:hover {
   flex-direction: column;
   max-width: 600px;
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(52, 73, 94, 0.9); /* Matching lighter purple */
   backdrop-filter: blur(8px);
   padding: 30px;
   border-radius: 20px;
@@ -147,6 +175,7 @@ nav ul li a:hover {
 .contact label {
   font-size: 1rem;
   margin-bottom: 10px;
+  color: #ecf0f1; /* Light gray for text */
 }
 
 .contact input, .contact textarea {
@@ -154,29 +183,30 @@ nav ul li a:hover {
   margin-bottom: 20px;
   border: none;
   border-radius: 10px;
-  background-color: #f0f0f0;
+  background-color: #34495e; /* Darker gray for input background */
+  color: #ecf0f1; /* Light gray for input text */
 }
 
 .contact button {
   padding: 12px;
   border: none;
-  background-color: #ffab91; /* Soft pastel coral */
-  color: white;
+  background-color: #8e44ad; /* Saturated slightly pink purple */
+  color: #ecf0f1; /* Light gray for text */
   font-size: 1rem;
   border-radius: 10px;
   transition: background-color 0.3s ease;
 }
 
 .contact button:hover {
-  background-color: #ff8a65; /* Slightly deeper pastel coral */
+  background-color: #9b59b6; /* Slightly lighter purple */
 }
 
 /* Footer */
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #b2dfdb; /* Pastel teal */
-  color: #fff;
+  background-color: #34495e; /* Darker gray for footer background */
+  color: #ecf0f1; /* Light gray for text */
 }
 
 /* Animations */
