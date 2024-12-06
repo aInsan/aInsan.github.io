@@ -155,6 +155,60 @@ nav ul li a:hover {
   font-size: 1.5rem;
 }
 
+/*Calculator*/
+.calculator {
+  background: rgba(52, 73, 94, 0.9); /* Matching lighter purple */
+  color: #ecf0f1; /* Light gray for text */
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.calculator form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calculator label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.calculator input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #3b4a5a; /* Slightly lighter gray for input background */
+  color: #ecf0f1; /* Light gray for input text */
+}
+
+.calculator input::placeholder {
+  color: #bdc3c7; /* Slightly darker gray for placeholder text */
+}
+
+.calculator button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #8e44ad; /* Saturated slightly pink purple */
+  color: #ecf0f1; /* Light gray for text */
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.calculator button:hover {
+  background-color: #9b59b6; /* Slightly lighter purple */
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
 /* Contact Section */
 .contact {
   background: #2c3e50; /* Dark blueish gray */
