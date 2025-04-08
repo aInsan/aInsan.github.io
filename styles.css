@@ -3,12 +3,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Noto Sans', monospace;
 }
 
 body {
-  background: #2c3e50; /* Dark blueish gray */
-  color: #ecf0f1; /* Light gray for text */
+  background: #121212; /* Dark background */
+  color: #ffffff; /* White text */
   overflow-x: hidden;
 }
 
@@ -17,7 +17,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 20px 40px;
-  background-color: rgba(52, 73, 94, 0.9); /* Matching lighter purple */
+  background-color: rgba(18, 18, 18, 0.9); /* Dark transparent background */
   backdrop-filter: blur(10px);
   position: fixed;
   width: 100%;
@@ -37,7 +37,7 @@ a:hover {
 header .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #ecf0f1; /* Light gray for text */
+  color: #ffffff; /* White text */
 }
 
 nav ul {
@@ -51,14 +51,16 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #ecf0f1; /* Light gray for text */
+  color: #ffffff; /* White text */
   font-size: 1rem;
   transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: #9b59b6; /* Slightly lighter purple */
+  color: #bb86fc; /* Light purple */
 }
+
+/* Hero Section */
 .hero {
   position: relative;
   height: 100vh;
@@ -72,8 +74,8 @@ nav ul li a:hover {
   position: absolute;
   z-index: 2;
   text-align: center;
-  color: #ecf0f1; /* Light gray for text */
-  background: rgba(44, 62, 80, 0.9); /* Dark blueish gray with transparency */
+  color: #ffffff; /* White text */
+  background: rgba(18, 18, 18, 0.8); /* Dark transparent background */
   padding: 20px;
   border-radius: 10px;
 }
@@ -97,13 +99,13 @@ nav ul li a:hover {
   font-size: 3rem;
   margin-bottom: 10px;
   animation: fadeIn 1.5s ease-in-out;
-  color: #b37cc9; /* Slightly lighter purple */
+  color: #bb86fc; /* Light purple */
 }
 
 .hero p {
   font-size: 1.25rem;
   animation: fadeIn 2s ease-in-out;
-  color: #bdc3c7; /* Slightly darker gray */
+  color: #b0b0b0; /* Light gray */
 }
 
 /* About Section */
@@ -112,9 +114,8 @@ nav ul li a:hover {
 }
 
 .about {
-  background: rgba(52, 73, 94, 0.9); /* Matching lighter purple */
-  color: #ecf0f1; /* Light gray for text */
-  backdrop-filter: blur(10px);
+  background: #1e1e1e; /* Slightly lighter dark background */
+  color: #ffffff; /* White text */
   border-radius: 20px;
   margin: 50px auto;
   max-width: 1200px;
@@ -129,11 +130,12 @@ nav ul li a:hover {
 .about p {
   font-size: 1.1rem;
   line-height: 1.6;
+  color: #b0b0b0; /* Light gray */
 }
 
 /* Projects Section */
 .projects {
-  background-color: #34495e; /* Darker gray */
+  background-color: #121212; /* Dark background */
 }
 
 .projects h2 {
@@ -143,16 +145,34 @@ nav ul li a:hover {
 }
 
 .project-item {
-  background: rgba(52, 73, 94, 0.9); /* Matching lighter purple */
-  backdrop-filter: blur(8px);
+  background: #1e1e1e; /* Slightly lighter dark background */
   border-radius: 15px;
   margin: 20px 0;
   padding: 20px;
-  animation: slideIn 0.5s ease-in-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .project-item h3 {
   font-size: 1.5rem;
+  color: #bb86fc; /* Light purple */
+}
+
+.project-item p {
+  color: #b0b0b0; /* Light gray */
+}
+
+.project-item a {
+  color: #bb86fc; /* Light purple */
+  text-decoration: none;
+}
+
+.project-item a:hover {
+  text-decoration: underline;
 }
 
 /*Calculator*/
@@ -211,8 +231,10 @@ nav ul li a:hover {
 
 /* Contact Section */
 .contact {
-  background: #2c3e50; /* Dark blueish gray */
+  background: #1e1e1e; /* Slightly lighter dark background */
   padding: 80px 40px;
+  border-radius: 20px;
+  text-align: center;
 }
 
 .contact form {
@@ -259,8 +281,8 @@ nav ul li a:hover {
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #34495e; /* Darker gray for footer background */
-  color: #ecf0f1; /* Light gray for text */
+  background-color: #121212; /* Dark background */
+  color: #b0b0b0; /* Light gray */
 }
 
 /* Animations */
