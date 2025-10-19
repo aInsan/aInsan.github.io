@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Noto Sans', monospace;
+  font-family: "Noto Sans", monospace;
 }
 
 body {
@@ -109,7 +109,9 @@ nav ul li a:hover {
 }
 
 /* About Section */
-.about, .projects, .contact {
+.about,
+.projects,
+.contact {
   padding: 100px 40px;
 }
 
@@ -254,7 +256,8 @@ nav ul li a:hover {
   color: #ecf0f1; /* Light gray for text */
 }
 
-.contact input, .contact textarea {
+.contact input,
+.contact textarea {
   padding: 10px;
   margin-bottom: 20px;
   border: none;
@@ -287,11 +290,21 @@ footer {
 
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slideIn {
-  from { transform: translateY(50px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

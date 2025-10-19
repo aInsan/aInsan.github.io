@@ -1,0 +1,114 @@
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background: #0b0b12;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 2rem;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  color: #c7c7ff;
+}
+
+.scoreboard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+@media (max-width: 700px) {
+  .scoreboard {
+    grid-template-columns: 1fr;
+  }
+}
+
+.team {
+  background: #141428;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 0 15px rgba(80, 60, 120, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.15s ease;
+}
+
+.team:hover {
+  transform: translateY(-4px);
+}
+
+.team-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #d1bfff;
+  background: none;
+  border: none;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+.score {
+  font-size: 3rem;
+  margin: 0.5rem 0 1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.score-input {
+  /* make the input look like plain text while keeping numeric entry */
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 3rem;
+  width: 100%;
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+/* remove number input spinners for webkit */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  width: 100%;
+}
+
+button {
+  padding: 0.6rem 0;
+  border: none;
+  border-radius: 0.6rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #3a0ca3, #7209b7);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #4cc9f0, #7209b7);
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
